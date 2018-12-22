@@ -76,7 +76,7 @@ class HasOffersTest extends FlatSpec with Matchers {
     )
   }
 
-  "infinte test" should "not error out" ignore {
+  "infinte test" should "not error out" in {
 
     var count = 0
     val bigStream = Stream.continually(Random.nextInt(4) match {

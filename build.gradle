@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'scala'
+    id "com.github.maiflai.scalatest" version "0.23"
 }
 
 group 'andrew.rosenberg'
@@ -17,5 +18,5 @@ dependencies {
 
     testCompile group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.5'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
-
+    testRuntime 'org.pegdown:pegdown:1.4.2'
 }
